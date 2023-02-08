@@ -1,0 +1,145 @@
+@charset "UTF-8";
+/* 
+Paleta de cores:
+Color Theme Swatches in Hex */
+.Natureza-1-hex { color: #474073; }
+.Natureza-2-hex { color: #4F4D8C; }
+.Natureza-3-hex { color: #49A09B; }
+.Natureza-4-hex { color: #2E4159; }
+.Natureza-5-hex { color: #262626; }
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: #4F4D8C;
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+
+    background-color: white;
+    width: 250px;
+    height: 590px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
+    transform: translate(-50%, -50%);/* Transform, colocar como ultima linha do seletor */
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
+}
+
+section#login > div#imagem {
+    display: block;
+    background:#2E4159 url(..//imagens/pexels-login.jpg) no-repeat;
+    background-size: cover;
+    background-position: left bottom;
+    height: 200px;
+
+}
+
+section#login > div#forms {
+    display: block;
+    padding: 10px;
+
+}
+
+div#forms > h1 {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+div#forms > p {
+    font-size: 0.8em;
+}
+
+form > div.campo {
+    background-color: #474073;
+    border: 2px solid #474073;
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    margin: 5px 0px;
+}
+
+div.campo > label {
+    display: none;
+}
+
+div.campo > span {
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input {
+    background-color: #49A09B;
+    font-size: 1em;
+    width: calc(100% - 46px);
+    height: 80%;
+    border: 0px;
+    border-radius: 8px;
+    margin: auto;
+    transform: translateY(-12.6px);/* Transform, colocar como ultima linha do seletor */
+}
+
+div.campo > input:focus-within {
+    background-color: white;
+
+}
+
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color:#2E4159 ;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form > input[type=submit]:hover {
+    background-color: #49A09B;
+}
+
+form > a.botao {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    padding-top: 5px;
+    margin-top: 5px;
+    background-color: white;
+    color: #262626;
+    border: 1px solid #2E4159;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+form > a.botao:hover {
+    background-color: #4F4D8C;
+    color: white;
+}
+form > a.botao > i {
+    font-size: 1em;
+}
